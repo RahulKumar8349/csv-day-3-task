@@ -32,14 +32,14 @@ public class Q3 {
                             .collect(Collectors.toList());
 
         List<Student> fail=students.stream()
-                            .filter(student -> student.getMarks()>50)
+                            .filter(student -> student.getMarks()<=50)
                             .collect(Collectors.toList());
 
-        hp.put("first",first);
-        hp.put("second",second);
-        hp.put("third",third);
-        hp.put("pass",pass);
-        hp.put("fail",fail);
+        hp.put("\nfirst",first);
+        hp.put("\nsecond",second);
+        hp.put("\nthird",third);
+        hp.put("\npass",pass);
+        hp.put("\nfail",fail);
         return hp;
     }
 }

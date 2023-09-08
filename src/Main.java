@@ -29,6 +29,10 @@ public class Main {
             System.out.println(Q5.findFailed(student)+"\n\n");
             System.out.println(Q6.findByClass(student,classes,"A")+"\n\n");
             System.out.println(Q8.findOverAged(student)+"\n\n");
+            System.out.println(Q8.findOverAged(student)+"\n\n");
+            Q9.delete(student,address,studentFilePath,addressFilePath,2);
+            //2,geeta,1,70,F,11
+            //3,412002,indore,2
 
         }
 
