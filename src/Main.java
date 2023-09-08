@@ -22,9 +22,13 @@ public class Main {
 
             System.out.println("\n\n");
 
-            System.out.println(Q1.findByPincode(student,address,422002));
-            System.out.println(Q2.findByCity(student,address,"indore"));
-            System.out.println(Q6.findByClass(student,classes,"A"));
+            System.out.println(Q1.findByPincode(student,address,422002)+"\n\n");
+            System.out.println(Q2.findByCity(student,address,"indore")+"\n\n");
+            System.out.println(Q3.findAchievers(student)+"\n\n");
+            System.out.println(Q4.findPassed(student)+"\n\n");
+            System.out.println(Q5.findFailed(student)+"\n\n");
+            System.out.println(Q6.findByClass(student,classes,"A")+"\n\n");
+            System.out.println(Q8.findOverAged(student)+"\n\n");
 
         }
 
