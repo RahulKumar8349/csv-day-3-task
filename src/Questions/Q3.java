@@ -1,3 +1,7 @@
+package Questions;
+
+import Assignment.Student;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

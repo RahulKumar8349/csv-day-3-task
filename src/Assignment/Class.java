@@ -1,3 +1,5 @@
+package Assignment;
+
 public class Class {
     int id;
     String name;
@@ -25,7 +27,7 @@ public class Class {
 
     @Override
     public String toString() {
-        return "Class{" +
+        return "Assignment.Class{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

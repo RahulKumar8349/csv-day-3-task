@@ -1,3 +1,5 @@
+package Assignment;
+
 public class Address {
    int  id;
    int pin_code;
@@ -45,7 +47,7 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" +
+        return "Assignment.Address{" +
                 "id=" + id +
                 ", pin_code=" + pin_code +
                 ", city='" + city + '\'' +
