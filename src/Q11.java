@@ -10,7 +10,7 @@ public class Q11 {
                 .collect(Collectors.toList());
     }
 
-    private static List<Student> getFemaleOrderByName(List<Student> student, int start, int end) {
+    public static List<Student> getFemaleOrderByName(List<Student> student, int start, int end) {
         return getFemaleStudentsList(student).stream()
                 .sorted(Comparator.comparing(Student::getName))
                 .skip(start - 1)
@@ -18,7 +18,7 @@ public class Q11 {
                 .collect(Collectors.toList());
     }
 
-    private static List<Student> getFemaleOrderByMarks(List<Student> student, int start, int end) {
+    public static List<Student> getFemaleOrderByMarks(List<Student> student, int start, int end) {
         return getFemaleStudentsList(student).stream()
                 .sorted(Comparator.comparingInt(Student::getMarks).reversed())
                 .skip(start - 1)

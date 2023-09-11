@@ -16,24 +16,56 @@ public class Main {
             List<Address> address = uploadAddress(addressFilePath);
             List<Class> classes= uploadClass(classFilePath);
 
+            System.out.println("Student data in csv\n");
             System.out.println(student);
+
+            System.out.println("address data in csv\n");
             System.out.println(address);
+
+            System.out.println("class data in csv\n");
             System.out.println(classes);
 
             System.out.println("\n\n");
 
+            System.out.println("Q1 - Find all students of pincode X(ex X = 482002). I can pass different filters like gender, age, class\n");
             System.out.println(Q1.findByPincode(student,address,422002)+"\n\n");
+
+            System.out.println("Q2 - Find all students of city ex X = Indore. I can pass different filters like gender, age, class\n\n");
             System.out.println(Q2.findByCity(student,address,"indore")+"\n\n");
+
+            System.out.println("Q3 - marks < 50 failed else passed\n" +
+                    "Give ranks to highest mark achievers.\n" +
+                    "Highest marks - First\n" +
+                    "Third Highest marks - third\n" +
+                    "Rest of all pass / fail\n");
             System.out.println(Q3.findAchievers(student)+"\n\n");
+
+            System.out.println("Q4 - Get the passed students. I can pass different filters like gender, age, class, city, pincode\n");
             System.out.println(Q4.findPassed(student)+"\n\n");
+
+            System.out.println("Q5 - Get the failed students. I can pass different filters like gender, age, class, city, pincode\n");
             System.out.println(Q5.findFailed(student)+"\n\n");
+
+            System.out.println("Q6 - Find all student of class X (ex X = A). I can pass different filters like gender, age, class, city, pincode\n");
             System.out.println(Q6.findByClass(student,classes,"A")+"\n\n");
+
+            System.out.println("Q8 -  It should fail if student record is having age > 20\n");
             System.out.println(Q8.findOverAged(student)+"\n\n");
-            System.out.println(Q8.findOverAged(student)+"\n\n");
+
+
+            //System.out.println("Q9 - I should be able to delete student. After that it should delete the respective obj from Address & Student\n");
             //Q9.delete(student,address,studentFilePath,addressFilePath,2);
-            System.out.println(Q10.deleteClass(student,classes));
+
+            System.out.println("Q10 - If there is no student remaining in that class. Class should also be deleted\n");
+            System.out.println(Q10.deleteClass(student,classes,classFilePath));
+
+            System.out.println("Q11 - like : read female students first 1-9\n");
             System.out.println(Q11.getFirstFemaleListInRange(student,1,9));
+
+            System.out.println("Q11 - like : read female students first 7-8 order by name\n");
             System.out.println(Q11.getFemaleOrderByName(student,7,8));
+
+            System.out.println("Q11 - like : read female students first 1-5 order by marks\n");
             System.out.println(Q11.getFemaleOrderByMarks(student,1,5));
             //2,geeta,1,70,F,11
             //3,412002,indore,2
