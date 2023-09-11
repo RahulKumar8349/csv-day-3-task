@@ -17,13 +17,13 @@ public class Main {
             List<Class> classes= uploadClass(classFilePath);
 
             System.out.println("Student data in csv\n");
-            System.out.println(student);
+            System.out.println(student+"\n\n");
 
             System.out.println("address data in csv\n");
-            System.out.println(address);
+            System.out.println(address+"\n\n");
 
             System.out.println("class data in csv\n");
-            System.out.println(classes);
+            System.out.println(classes+"\n\n");
 
             System.out.println("\n\n");
 
@@ -53,20 +53,20 @@ public class Main {
             System.out.println(Q8.findOverAged(student)+"\n\n");
 
 
-            //System.out.println("Q9 - I should be able to delete student. After that it should delete the respective obj from Address & Student\n");
-            //Q9.delete(student,address,studentFilePath,addressFilePath,2);
+            System.out.println("Q9 - I should be able to delete student. After that it should delete the respective obj from Address & Student\n");
+            Q9.delete(studentFilePath,addressFilePath,2);
 
             System.out.println("Q10 - If there is no student remaining in that class. Class should also be deleted\n");
-            System.out.println(Q10.deleteClass(student,classes,classFilePath));
+            System.out.println(Q10.deleteClass(student,classes,classFilePath)+"\n\n");
 
             System.out.println("Q11 - like : read female students first 1-9\n");
-            System.out.println(Q11.getFirstFemaleListInRange(student,1,9));
+            System.out.println(Q11.getFirstFemaleListInRange(student,1,9)+"\n\n");
 
             System.out.println("Q11 - like : read female students first 7-8 order by name\n");
-            System.out.println(Q11.getFemaleOrderByName(student,7,8));
+            System.out.println(Q11.getFemaleOrderByName(student,7,8)+"\n\n");
 
             System.out.println("Q11 - like : read female students first 1-5 order by marks\n");
-            System.out.println(Q11.getFemaleOrderByMarks(student,1,5));
+            System.out.println(Q11.getFemaleOrderByMarks(student,1,5)+"\n\n");
             //2,geeta,1,70,F,11
             //3,412002,indore,2
 

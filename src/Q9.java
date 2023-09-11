@@ -3,17 +3,13 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+
 public class Q9 {
-    public static   void delete(List<Student> students,List<Address> address ,String studentFilePath,String addressFilePath,int id)
+
+    public static   void delete(String studentFilePath,String addressFilePath,int id)
     {
         List<String> lines = readCsvFile(studentFilePath);
 
